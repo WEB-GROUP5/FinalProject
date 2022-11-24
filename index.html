@@ -1,14 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>Trang chủ</title>
+    <!-- Favicon :  title off website -->
+    <link rel="shortcut icon" href="../assets/images/logo/mainlogo.png">
+    <!-- Thư viện w3.js -->
+    <script src="./assets/vendors/js/w3.js"></script>
     <!-- normalize styles -->
     <link rel="stylesheet" href="./assets/css/normalize.css">
+    <!-- fonts + components -->
+    <link rel="stylesheet" href="./assets/css/componentstyle.css">
+    <!-- Homepage style -->
+    <link rel="stylesheet" href="./assets/css/homepage.css">
 </head>
+
 <body>
-    Home page
+    <!-- Import header W3 -->
+    <div w3-include-html="./header"></div>
+
+    <div class="container">
+
+        <div class="sesFilter">
+            <div class="searchBar">
+                <input type="text" class="search-input" placeholder="Search...">
+                <span class="search-icon"></span>
+            </div>
+            <div class="filter-box">
+                <button class="btnFilter"></button>
+            </div>
+        </div>
+
+
+        <div>Nội dung HomePage</div>
+        <br>
+        <div>Nội dung HomePage</div>
+        <br>
+        <div>Nội dung HomePage</div>
+        <br>
+        <div>Nội dung HomePage</div>
+        <br>
+        <div>Nội dung HomePage</div>
+        <br>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
+
 </html>

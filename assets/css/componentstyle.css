@@ -1,0 +1,70 @@
+@import url(fonts.css);
+
+html, body{
+  font-family: Roboto-Regular;
+  padding: 0 50px !important;
+}
+
+/* search bar */
+.searchBar {
+  width: 100%;
+  position: relative;
+  height: 40px;
+}
+.search-input {
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+
+  background-color: #f7f5f4;
+}
+.search-icon {
+  background-image: url("../images/icons/searchIcon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+}
+.searchBar:hover {
+  cursor: pointer;
+}
+
+.search-input:focus{
+  border: #efb607 1px solid;
+}
+/* end */
+
+.program-box {
+  border-radius: 14px;
+  display: inline;
+  appearance: none;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: normal;
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  width: auto;
+  line-height: inherit;
+  border-radius: 8px;
+  font-weight: 500;
+  height: auto;
+  min-width: auto;
+  font-size: 0.875rem;
+  color: inherit;
+  margin: 0px;
+  padding: 0px;
+}
+.program-box:hover{
+  cursor: pointer;
+}
+.shadow {
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px;
+}

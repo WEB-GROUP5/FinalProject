@@ -1,24 +1,96 @@
-.sesFilter{
-    display: flex
+.sesFilter {
+  display: flex;
 }
-.searchBar{
-    flex: 20;
+.searchBar {
+  flex: 20;
 }
-.filter-box{
-    flex: 1;
-    line-height: 40px;
-    text-align: right;
+.filter-box {
+  flex: 1;
+  margin-left: 20px;
+  line-height: 40px;
+  text-align: right;
 }
-.btnFilter{
-    outline: none;
+.btnFilter {
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/icons/SlidersHorizontal.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 0, 0, 0);
+}
+.btnFilter:hover {
+  cursor: pointer;
+}
+
+/*  */
+
+.sestypes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+button.program-box.shadow {
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.slider1 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.slider1 > div:hover,.slider2 > div:hover {
+  cursor: pointer;
+}
+.tns-outer{
+    position: relative;
+}
+.tns-nav{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.tns-nav button{
     border: none;
-    width: 40px;
-    height: 40px;
-    background-image: url('../images/icons/SlidersHorizontal.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: rgba(255, 0, 0, 0);
+    outline: none;
+    background-color: #ffedcba2;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 5px;
 }
-.btnFilter:hover{
-    cursor: pointer;
+.sesTitle{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 20px 0;
+  font-size: 1.25rem;
+
+}
+.slider2{
+  margin-top: 10px;
+  text-align: center;
+}
+.slider2 .img{
+  /* height: 120px; */
+  /* background-color: red; */
+  border-radius: 5px !important;
+}
+.slider2 > div img{
+    border-radius: 5px !important;
+}
+.slider2 .title{
+  font-weight: bold;
+  margin: 5px 0;
+}
+.slider2_item:hover .title{
+  text-decoration: underline;
+}
+.slider2:hover .slider2_item{
+  transform: scale(1.005);
+  transition: transform .2s;
+}
+.slider2_item:hover .title img{
+  box-shadow: rgba(0, 0, 0, 0.034) 0px 4px 6px;
 }

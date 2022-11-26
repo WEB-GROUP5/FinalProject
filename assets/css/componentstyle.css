@@ -1,8 +1,10 @@
 @import url(fonts.css);
 
-html, body{
+html,
+body {
   font-family: Roboto-Regular;
-  padding: 0 50px !important;
+  padding: 0 10% !important;
+  font-size: 13px;
 }
 
 /* search bar */
@@ -35,7 +37,7 @@ html, body{
   cursor: pointer;
 }
 
-.search-input:focus{
+.search-input:focus {
   border: #efb607 1px solid;
 }
 /* end */
@@ -51,7 +53,7 @@ html, body{
   vertical-align: middle;
   outline: none;
   border: none;
-  width: auto;
+  width: 20%;
   line-height: inherit;
   border-radius: 8px;
   font-weight: 500;
@@ -60,11 +62,40 @@ html, body{
   font-size: 0.875rem;
   color: inherit;
   margin: 0px;
-  padding: 0px;
+  padding: 15px 30px;
+  background-color: white;
 }
-.program-box:hover{
+.program-box:hover {
   cursor: pointer;
+  background-color: rgba(241, 241, 241, 0.438);
 }
 .shadow {
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px;
+}
+.program-box .box {
+  display: flex;
+}
+.circal-icon{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 9999px;
+  background: #FFEDCB;
+  margin-right: 20px;
+}
+
+.box p{
+    font-weight: 400;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    font-size: .9rem;
 }

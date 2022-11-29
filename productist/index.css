@@ -1,0 +1,134 @@
+.box-info-productlist{
+    display: flex;
+    width: 100%; 
+    min-width: 50%;
+    text-align: left;
+    padding: 20px auto;
+    margin: 20px auto;
+  
+}
+img {
+    height: 100px;
+    width: 100px;
+}
+.block-productlist{
+    display: flex;
+    margin-left: 30px;
+    min-width: 50%;
+}
+.left{
+    width: 50vw;
+}
+.right{
+    width: 50vw;
+}
+#wishListBtn .effect-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(25deg);}
+.btn-wish-list span {
+        font-size: 12px;
+        color: #777;
+    }
+    #wishListBtn .btn__effect {
+        display: inline-block;
+        position: relative;
+        border: 0;
+        background-color: transparent;
+    }
+    #wishListBtn .heart-border {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #wishListBtn .icon-svg {
+        display: inline-block;
+        vertical-align: middle;
+        height: 20px;
+        width: 20px;
+    }
+    #wishListBtn .icon-svg--color-cps {
+        fill: #d70018;
+        color: #d70018;
+    }
+    #wishListBtn .icon-svg {
+        display: inline-block;
+        vertical-align: middle;
+        height: 20px;
+        width: 20px;
+    }
+    #wishListBtn .icon-svg--color-silver {
+        fill: #fff;
+        color: #fff;
+    }
+    svg:not(:root) {
+        overflow: hidden;
+    }
+    #wishListBtn .heart-full {
+        position: absolute;
+        left: 6px;
+        top: 1px;
+        opacity: 0;
+    }
+    #wishListBtn .icon-svg {
+        display: inline-block;
+        vertical-align: middle;
+        height: 20px;
+        width: 20px;
+    }
+    #wishListBtn .icon-svg--color-cps {
+        fill: #d70018;
+        color: #d70018;
+    }
+    #wishListBtn .broken-heart {
+        position: absolute;
+        left: -8px;
+        top: 4px;
+        opacity: 0;
+        transform: scale(1.3);
+    }
+    #wishListBtn .broken-heart--left {
+        transform: rotate(0deg);
+        transform-origin: 60% 200%;
+    }
+    
+    #wishListBtn .broken-heart--crack {
+        stroke-dasharray: 15;
+        stroke-dashoffset: 15;
+    }
+    
+    
+    #wishListBtn .effect-group{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotate(25deg);
+    }
+    #wishListBtn .effect-group .effect{
+        display: block;
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        width: 20px;
+        transform-origin: 0 2px;
+    }
+    #wishListBtn .effect-group .effect:nth-child(2) {
+        transform: rotate(72deg);
+    }
+    #wishListBtn .effect-group .effect:nth-child(3) {
+        transform: rotate(144deg);
+    }
+    #wishListBtn .effect-group .effect:nth-child(4) {
+        transform: rotate(216deg);
+    }
+    #wishListBtn .effect-group .effect:nth-child(5) {
+        transform: rotate(288deg);
+    }

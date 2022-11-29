@@ -37,7 +37,7 @@ body {
   cursor: pointer;
 }
 
-.search-input:focus {
+.search-input:focus{
   border: #efb607 1px solid;
 }
 /* end */

@@ -1,0 +1,170 @@
+.main_top {
+    display: flex;
+}
+
+.item-left {
+    width: 40%;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.img {
+    width: 75%;
+    border-radius: 15px;
+}
+
+.item-right {
+    width: 60%;
+}
+
+.mausac {
+    display: flex;
+}
+
+.button {
+    width: max-content;
+    border: 3px solid orange;
+    height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.giachinhthuc {
+    display: flex;
+    font-size: 30px;
+}
+
+.giam {
+    color: red;
+    margin-left: 30px;
+}
+
+span {
+    font-size: 20px;
+}
+
+h3 {
+    padding: 0;
+    margin: 15px 0;
+}
+
+.giagoc {
+    color: darkgrey;
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.mota {
+    text-align: justify;
+}
+
+.container-html {
+    display: flex;
+}
+
+.item {
+    width: 500px;
+    margin: 20px;
+    border: 2px solid rgb(168, 156, 156);
+    text-align: center;
+    border-radius: 20px;
+}
+
+.imgpro {
+    width: 100%;
+}
+
+.w.img {
+    width: 200px;
+}
+
+.stars {
+    position: relative;
+    white-space: nowrap;
+    max-width: min-content;
+}
+
+#star-overlay {
+    background: #fff;
+    height: 100%;
+    overflow: hidden;
+    mix-blend-mode: color;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.stars i {
+    color: gold;
+}
+
+div#colorOptions {
+    display: flex;
+}
+
+.colorOption {
+    border: 2px solid black;
+    width: 13%;
+    border-radius: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-left: 20px;
+    font-size: 22px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: max-content;
+}
+
+.float-right-buttons {
+    float: right;
+    font-size: 30px;
+}
+
+div.item img {
+    border-radius: 10px;
+    max-height: 180px;
+}
+
+div.item {
+    max-width: 200px;
+    padding: 10px;
+    text-decoration: none !important;
+    transition-duration: 0.25s;
+    background: white;
+}
+
+div.item:hover {
+    scale: 1.10;
+    transition-duration: 0.25s;
+    border: 2px solid red;
+}
+
+div.item:hover * {
+    color: red !important;
+}
+
+div.p {
+    min-height: 100px;
+    color: black !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:900px) {
+    div.main_top {
+        flex-direction: column !important;
+    }
+    div.main_top div {
+        width: 100% !important;
+    }
+    div.item {
+        max-width: 28vw;
+    }
+    div.uk-slider {
+        margin-left: -120px;
+        width: 100vw;
+    }
+}

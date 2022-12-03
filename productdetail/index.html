@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="../assets/css/componentstyle.css">
     <!--  style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../assets/css/productdetail.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/css/uikit.min.css" />
 
@@ -23,178 +25,6 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit-icons.min.js"></script>
 </head>
-<style>
-    .main_top {
-        display: flex;
-    }
-    
-    .item-left {
-        width: 40%;
-        text-align: left;
-        padding: 20px 0;
-    }
-    
-    .img {
-        width: 75%;
-        border-radius: 15px;
-    }
-    
-    .item-right {
-        width: 60%;
-    }
-    
-    .mausac {
-        display: flex;
-    }
-    
-    .button {
-        width: max-content;
-        border: 3px solid orange;
-        height: 50px;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    
-    .giachinhthuc {
-        display: flex;
-        font-size: 30px;
-    }
-    
-    .giam {
-        color: red;
-        margin-left: 30px;
-    }
-    
-    span {
-        font-size: 20px;
-    }
-    
-    h3 {
-        padding: 0;
-        margin: 15px 0;
-    }
-    
-    .giagoc {
-        color: darkgrey;
-        text-decoration: line-through;
-        font-size: 20px;
-    }
-    
-    .mota {
-        text-align: justify;
-    }
-    
-    .container-html {
-        display: flex;
-    }
-    
-    .item {
-        width: 500px;
-        margin: 20px;
-        border: 2px solid rgb(168, 156, 156);
-        text-align: center;
-        border-radius: 20px;
-    }
-    
-    .imgpro {
-        width: 100%;
-    }
-    
-    .w.img {
-        width: 200px;
-    }
-    
-    .stars {
-        position: relative;
-        white-space: nowrap;
-        max-width: min-content;
-    }
-    
-    #star-overlay {
-        background: #fff;
-        height: 100%;
-        overflow: hidden;
-        mix-blend-mode: color;
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-    
-    .stars i {
-        color: gold;
-    }
-    
-    div#colorOptions {
-        display: flex;
-    }
-    
-    .colorOption {
-        border: 2px solid black;
-        width: 13%;
-        border-radius: 30px;
-        height: 30px;
-        text-align: center;
-        line-height: 30px;
-        margin-left: 20px;
-        font-size: 22px;
-        padding-left: 10px;
-        padding-right: 10px;
-        min-width: max-content;
-    }
-    
-    .float-right-buttons {
-        float: right;
-        font-size: 30px;
-    }
-    
-    div.item img {
-        border-radius: 10px;
-        max-height: 180px;
-    }
-    
-    div.item {
-        max-width: 200px;
-        padding: 10px;
-        text-decoration: none !important;
-        transition-duration: 0.25s;
-        background: white;
-    }
-    
-    div.item:hover {
-        scale: 1.10;
-        transition-duration: 0.25s;
-        border: 2px solid red;
-    }
-    
-    div.item:hover * {
-        color: red !important;
-    }
-    
-    div.p {
-        min-height: 100px;
-        color: black !important;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        font-weight: bolder;
-    }
-    
-    @media only screen and (max-width:900px) {
-        div.main_top {
-            flex-direction: column !important;
-        }
-        div.main_top div {
-            width: 100% !important;
-        }
-        div.item {
-            max-width: 28vw;
-        }
-        div.uk-slider {
-            margin-left: -120px;
-            width: 100vw;
-        }
-    }
-</style>
 
 <body>
     <!-- Import header W3 -->
@@ -204,7 +34,7 @@
 
         <div class="main_top">
             <div class="item-left">
-                <img class="img" src="../productdetail/img_productdetail/Túi làm từ táo thừa.png" alt="">
+                <img class="img" src="../assets/images/img_productdetail/Túi làm từ táo thừa.png" alt="">
             </div>
             <div class="item-right">
                 <div class="float-right-buttons">
@@ -224,7 +54,8 @@
                 <small id="removedPrice" class="giagoc"></small>
                 <div class="giachinhthuc">
                     <strong>
-                    <h3 id="price">399.<span>000</span>VNĐ</h3></strong>
+                        <h3 id="price">399.<span>000</span>VNĐ</h3>
+                    </strong>
                     <h3 id="slashedRatio" class="giam">(-43%)</h3>
                 </div>
                 <div class="mausac">
@@ -238,8 +69,8 @@
                 <div>
                     <button class="button">
                         <i class="bi bi-cart-plus"></i>
-						Thêm vào giỏ hàng
-					</button>
+                        Thêm vào giỏ hàng
+                    </button>
                 </div>
                 <hr>
                 <div>
@@ -255,12 +86,17 @@
         </div>
         <div class="main_end">
             <h3>Mô tả:</h3>
-            <p id="desc" class="mota">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate repellat nesciunt libero voluptates unde. Magnam eveniet odio ducimus earum mollitia velit, iusto, excepturi repudiandae rem blanditiis voluptates fugiat quisquam? Lorem
-                ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis accusantium eum non neque maiores cum ipsum voluptate esse alias quibusdam quis ex placeat itaque qui mollitia, delectus expedita quisquam deserunt? Lorem, ipsum dolor sit
-                amet consectetur adipisicing elit. Aut ea nemo deleniti fugit ducimus sint. Velit pariatur placeat quibusdam exercitationem dolores nihil repellat esse atque? Doloremque eaque provident ipsum totam!
+            <p id="desc" class="mota">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia voluptate repellat
+                nesciunt libero voluptates unde. Magnam eveniet odio ducimus earum mollitia velit, iusto, excepturi
+                repudiandae rem blanditiis voluptates fugiat quisquam? Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis accusantium eum non neque maiores cum
+                ipsum voluptate esse alias quibusdam quis ex placeat itaque qui mollitia, delectus expedita quisquam
+                deserunt? Lorem, ipsum dolor sit
+                amet consectetur adipisicing elit. Aut ea nemo deleniti fugit ducimus sint. Velit pariatur placeat
+                quibusdam exercitationem dolores nihil repellat esse atque? Doloremque eaque provident ipsum totam!
             </p>
         </div>
-        <br></br>
+        <br>
         <div class="sanphamlienquan">
             <h2>SẢN PHẨM LIÊN QUAN</h2>
         </div>
@@ -268,108 +104,24 @@
 
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
 
-                <ul id="items-list" class="uk-slider-items uk-child-width-1-5 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid">
+                <ul id="items-list"
+                    class="uk-slider-items uk-child-width-1-5 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid">
                 </ul>
 
 
-                <a class="uk-position-center-left uk-position-small" style="color: black; z-index: 100;" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small" style="color: black;z-index: 100;" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                <a class="uk-position-center-left uk-position-small" style="color: black; z-index: 100;" href="#"
+                    uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small" style="color: black;z-index: 100;" href="#"
+                    uk-slidenav-next uk-slider-item="next"></a>
             </div>
 
             <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
         </div>
 
 
     </div>
+    <script src="../assets/js/productdetail.js"></script>
     <script>
-        const setData = (cssQuery, value) => {
-            document.querySelector(cssQuery).innerHTML = value;
-        }
-
-        // percentage should be in range [0 .. 1]
-        function setRatingStar(percentage) {
-            const strPercent = (1 - percentage) * 100 + "%"
-            document.getElementById("star-overlay").style.width = strPercent;
-        }
-
-        async function loadJson() {
-            const fetchedData = await fetch("productdetail.json")
-            const loadedJson = await fetchedData.json()
-
-            // lấy data của id truyền vào url
-            // url kiểu: /index.html?id=elegant
-            const urlTokens = document.URL.split("/");
-            const urlQuery = urlTokens[urlTokens.length - 1]
-            const productId = urlQuery.split("=")[1]
-
-            // lấy product của id đã nhận
-            const selectedProduct = loadedJson.filter(productObj => productObj.id.toString() === productId.toString())[0]
-
-            console.log(selectedProduct);
-            // render data lần đầu
-            setData("h1", selectedProduct.title)
-            setData("small#removedPrice", selectedProduct.removedPrice)
-            setData("h3#price", `${selectedProduct.price / 1000}.<span>000</span>VNĐ`)
-
-            const ratio = (selectedProduct.removedPrice - selectedProduct.price) / selectedProduct.removedPrice;
-            setData("h3#slashedRatio", `(-${(ratio * 100).toFixed(0)}%)`)
-
-            setRatingStar(selectedProduct.rating / 5)
-            setData("span#origin", selectedProduct.origin)
-            setData("span#material", selectedProduct.material)
-            setData("span#size", selectedProduct.size)
-            setData("p#desc", selectedProduct.desc)
-
-            document.querySelector("img.img").src = selectedProduct.imageUrl
-
-            const preparedColorOptions = selectedProduct.colorOptions.reduce(
-                (accStr, color) => {
-                    console.log(accStr);
-                    console.log(color)
-                    return accStr + `
-                    <div class="MAU colorOption" style="background: ${color};">
-                            ${color}
-                    </div>
-                    `;
-                }, "")
-
-            setData("div#colorOptions", preparedColorOptions)
-
-            const relativeProducts = loadedJson.filter(prod => prod.id.toString() !== productId.toString())
-
-            console.table(relativeProducts)
-            let html = "";
-
-            for (let p of relativeProducts) {
-
-                html += `
-                <li>
-                <a href="/productdetail/index.html?id=${p.id}">
-                    <div class='item uk-panel' >
-                        <div class='w.img'>
-                            <img class='imgpro' src='${p.imageUrl}'/><br/>
-                        </div>
-                        <br>
-                        <div class='p'> 
-                            <p style="margin-bottom: 10px;"> ${p.title} </p> 
-                            ${p.price / 1000}.000 VNĐ
-                        </div>
-                    </div>
-                </a>
-                </li>
-                `
-            }
-            document.getElementById("items-list").innerHTML = html;
-
-        }
-
-        window.onload = () => {
-
-            loadJson();
-
-        }
-
         w3.includeHTML();
     </script>
 </body>

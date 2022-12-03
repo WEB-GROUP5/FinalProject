@@ -1,0 +1,60 @@
+
+.container{
+    width:1000px;
+    margin: 0 auto;
+}
+header{
+    height:50px;
+
+}
+header p{
+    margin-right:10px;
+}
+nav{
+    height:50px;
+}
+nav.menu ul{
+    list-style: none;
+
+}
+nav.menu ul li{
+    float:left;
+    line-height: 20px;
+    padding: 0 15px;
+}
+nav.menu ul li a{
+    color:black;
+    font-size: 15px;
+    text-decoration: none;
+}
+.pp{
+    background-color: #FBBC04;
+    height: 70px;
+    margin-top:10px;}
+
+section{
+    height:550px;
+    display:flex;
+}
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+}
+.product{
+    width:65%;
+    height: 400px;
+}
+.img{
+    float:left;
+
+
+}
+.tb{
+    width:35%;
+}
+table{
+    border:1px solid gainsboro;
+    border-radius: 30px;
+    width:350px;
+}

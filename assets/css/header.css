@@ -22,3 +22,6 @@
 .account .accBtn:hover{
     cursor: pointer;
 }
+.main-logo{
+  cursor: pointer;
+}

@@ -1,0 +1,38 @@
+.modal{
+    width: 520px;
+    margin-top: 50px;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+.modal-container{
+    padding: 10px 20px;
+}
+
+.modal-button{
+    margin: 10px auto;
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    border-radius: 100px;
+    font-weight: bold;
+    
+}
+.modal-button:hover{
+    cursor: pointer;
+}
+.modal-button.filter{
+    margin-top: 30px;
+    background-color: rgb(251, 188, 4);
+    border: none;
+}
+.modal-button.filter:hover{
+    background-color: rgb(230, 173, 3);
+}
+.modal-button.cancel{
+    border: .5px solid rgb(88, 88, 88);
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.modal-button.cancel:hover{
+    background-color: #ebebeb2c
+}

@@ -6,7 +6,6 @@ body {
   padding: 0 10% !important;
   font-size: 13px;
 }
-
 /* search bar */
 .searchBar {
   width: 100%;
@@ -37,7 +36,7 @@ body {
   cursor: pointer;
 }
 
-.search-input:focus{
+.search-input:focus {
   border: #efb607 1px solid;
 }
 /* end */
@@ -73,9 +72,9 @@ body {
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px;
 }
 .program-box .box {
-  display: flex;
+  display: inline-flex;
 }
-.circal-icon{
+.circal-icon {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -87,15 +86,105 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 9999px;
-  background: #FFEDCB;
+  background: #ffedcb;
   margin-right: 20px;
 }
 
-.box p{
-    font-weight: 400;
+.box p {
+  font-weight: 400;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  font-size: 0.9rem;
+}
+p.chakra-tex {
+  margin: auto;
+}
+p {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+@media only screen and (max-width: 1160px) {
+  .circal-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 3px;
+  }
+  .box {
+  }
+  .circal-icon img {
+    width: 20px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  button.program-box.shadow {
+    padding: 10px 8px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .sestypes{
+    margin: -20px;
+  }
+  .shadow {
+    box-shadow: rgba(0, 0, 0, 0) 0px 4px 6px;
+  }
+  .program-box {
+    width: 20%;
+  }
+  .program-box .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sestypes {
+    justify-content: flex-start;
+  }
+  body,
+  html {
+    font-size: 10px;
+  }
+  .searchBar {
+    height: 30px;
+  }
+  .box {
+    align-items: center;
     text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    font-size: .9rem;
+  }
+  p.chakra-text {
+    margin-top: 10px;
+    font-size: 1.2rem !important;
+  }
+  .circal-icon {
+    margin-right: 0px;
+  }
+}
+
+/* Scroll style */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #ffc06f;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
 }

@@ -1,0 +1,49 @@
+.sesFilter {
+    display: flex;
+  }
+  .searchBar {
+    flex: 20;
+  }
+  .filter-box {
+    flex: 1;
+    margin-left: 20px;
+    line-height: 40px;
+    text-align: right;
+  }
+  .btnFilter {
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/icons/SlidersHorizontal.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 0, 0, 0);
+  }
+  .btnFilter:hover {
+    cursor: pointer;
+  }
+  .btnBack{
+    outline: none;
+    border: none;
+    background-color: white;
+    height: 40px;
+    display: flex;
+    border-radius: 10px;
+    /* line-height: 40px; */
+  }
+  .btnBack:hover{
+    cursor: pointer;
+    background-color: rgba(250, 235, 215, 0.185);
+  }
+  .btnBack svg{
+    line-height: 40px;
+    margin: auto;
+    margin-right: 3px;
+    padding-top: 8px;
+  }
+  .btnBack span{
+    /* margin-bottom: 20px !important; */
+    margin: auto 3px;
+    padding-top: 10px;
+  }

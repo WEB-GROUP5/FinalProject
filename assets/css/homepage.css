@@ -1,112 +1,132 @@
 .sesFilter {
-    display: flex;
+  display: flex;
+}
+.searchBar {
+  flex: 20;
+}
+.filter-box {
+  flex: 1;
+  margin-left: 20px;
+  line-height: 40px;
+  text-align: right;
+}
+.btnFilter {
+  outline: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/icons/SlidersHorizontal.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 0, 0, 0);
+}
+.btnFilter:hover {
+  cursor: pointer;
+}
+
+/*  */
+
+.sestypes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+button.program-box.shadow {
+  margin: 10px;
+  flex-grow: 1;
+}
+
+.slider1 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.slider1 > div:hover,
+.slider2 > div:hover,
+.slider3 > div:hover {
+  cursor: pointer;
+}
+.tns-outer {
+  position: relative;
+}
+.tns-nav {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.tns-nav button {
+  border: none;
+  outline: none;
+  background-color: #ffedcba2;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 0 5px;
+}
+.sesTitle {
+  position: relative;
+}
+.sesTitle .title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 20px 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: Roboto-Bold;
+}
+.showAll {
+  text-decoration: none;
+  line-height: 1.25rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.slider {
+  margin-top: 10px;
+  text-align: center;
+}
+.slider2 .img,
+.slider3 .img {
+  /* height: 120px; */
+  /* background-color: red; */
+  border-radius: 5px !important;
+}
+.description {
+  font-weight: normal;
+}
+.slider > div img {
+  border-radius: 5px !important;
+}
+.slider {
+  font-weight: bold;
+  margin: 5px 0;
+}
+.slider2 {
+  margin-bottom: 30px !important;
+}
+.slider2_item:hover .title,
+.slider2_item:hover .title {
+  text-decoration: underline;
+}
+.slider3_item .title{
+  font-size: .8rem;
+}
+.slider:hover .slider_item {
+  transform: scale(1.005);
+  transition: transform 0.2s;
+}
+.slider_item:hover .title img {
+  box-shadow: rgba(0, 0, 0, 0.034) 0px 4px 6px;
+}
+
+p.chakra-text {
+  margin: auto;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1190px) {
+  p.chakra-text.css-1x6sds2 {
+    margin-top: 0rem;
   }
-  .searchBar {
-    flex: 20;
-  }
-  .filter-box {
-    flex: 1;
-    margin-left: 20px;
-    line-height: 40px;
-    text-align: right;
-  }
-  .btnFilter {
-    outline: none;
-    border: none;
-    width: 40px;
-    height: 40px;
-    background-image: url("../images/icons/SlidersHorizontal.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: rgba(255, 0, 0, 0);
-  }
-  .btnFilter:hover {
-    cursor: pointer;
-  }
-  
-  /*  */
-  
-  .sestypes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-  }
-  button.program-box.shadow {
-    margin: 10px;
-    flex-grow: 1;
-  }
-  
-  .slider1 {
-    margin-top: 10px;
-    margin-bottom: 40px;
-  }
-  .slider1 > div:hover,.slider2 > div:hover, .slider3 > div:hover {
-    cursor: pointer;
-  }
-  .tns-outer{
-      position: relative;
-  }
-  .tns-nav{
-      text-align: center;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-  }
-  .tns-nav button{
-      border: none;
-      outline: none;
-      background-color: #ffedcba2;
-      width: 10px;
-      height: 10px;
-      border-radius: 100%;
-      margin: 0 5px;
-  }
-  .sesTitle{
-    position: relative;
-  }
-  .sesTitle .title{
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin: 20px 0;
-    font-size: 1.25rem;
-  
-  }
-  .showAll{
-    text-decoration: none;
-    line-height: 1.25rem;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-  .slider{
-    margin-top: 10px;
-    text-align: center;
-  }
-  .slider2 .img, .slider3 .img{
-    /* height: 120px; */
-    /* background-color: red; */
-    border-radius: 5px !important;
-  }
-  .description{
-    font-weight: normal;
-  }
-  .slider > div img{
-      border-radius: 5px !important;
-  }
-  .slider{
-    font-weight: bold;
-    margin: 5px 0;
-  }
-  .slider2{
-    margin-bottom: 30px !important;
-  }
-  .slider2_item:hover .title, .slider2_item:hover .title{
-    text-decoration: underline;
-  }
-  .slider:hover .slider_item{
-    transform: scale(1.005);
-    transition: transform .2s;
-  }
-  .slider_item:hover .title img{
-    box-shadow: rgba(0, 0, 0, 0.034) 0px 4px 6px;
-  }
+}

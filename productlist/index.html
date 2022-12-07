@@ -7,8 +7,42 @@
     <title>productist</title>
     <link rel="stylesheet" href="./index.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <link rel="shortcut icon" href="../assets/images/logo/mainlogo.png">
+   <!-- Thư viện w3.js -->
+   <script src="../assets/vendors/js/w3.js"></script>
+   <!-- normalize styles -->
+   <link rel="stylesheet" href="../assets/css/normalize.css">
+   <!-- fonts + components -->
+   <link rel="stylesheet" href="../assets/css/componentstyle.css">
+   <!-- search style -->
+   <link rel="stylesheet" href="../assets/css/search.css">
+
+   <link rel="stylesheet" href="../assets/vendors/css/tiny-slider.css">
 </head>
 <body>
+    <div w3-include-html="../header"></div>
+
+    <div class="container">
+        <div class="sesFilter">
+            <button onclick="window.location.replace('../')" class="btnBack">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    class="mdl-js">
+                    <path d="M20.25 12H3.75" stroke="#575454" stroke-width="1.50125" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#575454" stroke-width="1.50125"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>BACK</span>
+            </button>
+            <div class="searchBar">
+                <input type="search" class="search-input" placeholder="Search..." autofocus>
+                <span class="search-icon"></span>
+            </div>
+            <div class="filter-box">
+                <button class="btnFilter"></button>
+            </div>
+        </div>
+       
     <div class="block-bestseler">
         <div class="tittle">
             <h2>Best seller</h2>
@@ -345,6 +379,11 @@
             </div>
           </div>
      
-   
+          <script>
+            w3.includeHTML();
+        </script>
+        <script src="../assets/js/modals.js"></script>
+        <script src="../assets/js/handleScroll.js"></script>
+        
 </body>
 </html>

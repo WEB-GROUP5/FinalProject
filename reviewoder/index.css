@@ -1,44 +1,50 @@
- .wrapper{
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+}
+.container{
+    margin:20px;
+}
+.row{
+    width:100%;
     display: flex;
-    flex-flow: row wrap;
-} 
-.wrapper >*{
-    padding:10px;
-    margin:10px;
-    flex: 1 100%;
-    border-radius: 10px;
+    flex-wrap: wrap;
 }
 .header{
+    position: relative;
+    background-color: white;
+    flex:1;
+    max-width: 1200px;
     height:50px;
+    margin:10px;
+ 
 }
-.header p{
-    margin-right:10px;
-    font-size: 18px;
-}
-.header div span  img{
+.header p span img{
     width: 50px;
     height: auto;
     float: left;
-}
-/* css nav */
-nav {
-    background-color: white;
-    height:40px;
-    width:100%;
-   
-}
  
-nav ul{
+}
+.nav{
+    position: relative;
+    background-color: white;
+    flex:1;
+    max-width: 1200px;
+    height:50px;
+    margin:10px;  
+}
+.nav ul{
     display: flex;
     align-items: left;
     margin-right: 20px;
 }
-nav ul li {
+ 
+ .nav ul li{
     list-style: none;
-   
  
 }
-nav ul li a{
+.nav ul li a{
     color:black;
     font-size: 20px;
     text-decoration: none;
@@ -46,77 +52,78 @@ nav ul li a{
     transition: all 0.3s;
     position: relative;
 }
-nav ul li a:hover{
+.nav ul li a:hover{
     color:blue;
 }
  
+ 
 .pp{
-    background-color: #FBBC04;
-    height: 70px;
-    margin-top:10px;}
- 
-section.main{
+    position: relative;
+    background-color:#FBBC04;
+    flex:1;
+    max-width: 1200px;
+    height:70px;
+    margin:10px;  
+}
+.item-left{
+    position: relative;
+    background-color:white;
+    flex:1;
+    max-width: 900px;
     height:600px;
-    display:flex;
-    padding: 10px;
-    
+    margin:10px;  
 }
-  .item-left {
-    padding: 10px;
-    width:75%; 
-    height: 400px;
-  }
-  
-  .item-right {
-    padding: 10px;
-    height:380px;
-    float:right;
-    border:1px solid gainsboro;
-    border-radius:30px;
-    width:25%;
 
-
-  }
-   /* @media all and (min-width:800px){
-    .main{
-        flex:2;
-    }
-    .item-left{
-        order:1;
-    }
-    .item-right{
-        order:2;
-    }
-    footer{
-        order:3;
-    }
-  }
-  @media all and(min-width:600px){
-    .main{
-        flex:1;
-    }
-  } */
-
-
-img{
-    width: 120px;
-    height: 120px;
-    border-radius: 10px;
-} 
+.item-right{
+    position: relative;
+    background-color:white;
+    flex:1;
+    max-width: 350px;
+    height:600px;
+    margin:10px;  
  
-.img{
-float:left;
+}
+.item-left img{
+    width:150px;
+    height:150px;
+    float:left;
+    border-radius:10px;
 }
 
+     
+    .item-right
+    {
+        border:1px solid gainsboro;
+        border-radius:30px;
+        height:380px;
+     
+    }
+   
+.footer{
+    position: relative;
+    background-color:white;
+    flex:1;
+    max-width: 1000px;
+    height:500px;
+    margin:10px;  
+}
+ 
+ 
+ 
+   
 .tb1
    { width:640px;
     border:1px solid gainsboro;
     height:180px;
 }
 .tb1 tr td{
-    width:320px;   
+    width:320px;
+ 
+ 
+   
 }
-
+ 
+ 
 .input1{
     width:150px;
     height:30px;
@@ -144,21 +151,45 @@ float:left;
     height:25px;
     border-radius: 5px;  }
  
- footer{
-    padding: 20px;
-    height:auto;
-
-
- }   
-footer div button{
+   
+.footer div button{
         width: 150px;
         height:50px;
         background-color:gray;
-
+ 
 }
-footer div button:hover{
+.footer div button:hover{
         background-color: #F1A039;
 }
+ 
+ 
+ 
+ 
+ 
+@media(max-width:800px){
+    .header{
+        flex:100%;
+        max-width: 600px;
+    }
+    .nav{
+        flex:100%;
+        max-width: 600px;
+    }
+    .pp{
+        flex:100%;
+        max-width: 600px;
+    }
+    .item-left{
+        flex:100%;
+        max-width: 600px;
+    }
+    .item-right{
+        flex:100%;
+        max-width: 400px;
+    }
+    .footer{
+        flex:100%;
+        max-width: 600px;  
+    }
+}
 
- 
- 

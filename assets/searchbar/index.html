@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SearchBar</title>
+    <link rel="stylesheet" href="../css/componentstyle.css">
+    <link rel="stylesheet" href="../css/homepage.css"> 
+    <link rel="stylesheet" href="../css/modal.css"> 
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../vendors/css/w3.css"> 
+    <script src="../js/modals.js"></script>
+</head>
+
+<body>
+    <div class="sesFilter">
+        <div class="searchBar" onclick="window.location.replace('searchresult')">
+            <input type="text" class="search-input" placeholder="Search...">
+            <span class="search-icon"></span>
+        </div>
+        <div class="filter-box">
+            <button class="btnFilter" onclick="openModal('filter')"></button>
+        </div>
+        <div id="filter" style="display: none;" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content w3-card-4 modal">
+
+                <div class="w3-container modal-container">
+                    <form action="">
+                        <h3 class="filter-title">Mặt hàng</h3>
+                        <div class="filter-content" action="#">
+                            <div class="filter-row">
+                                <label for="">Túi xách</label>
+                                <input type="checkbox" name="tuixach" id="tuixach">
+                            </div>
+                            <div class="filter-row">
+                                <label for="">Túi xách</label>
+                                <input type="checkbox" name="tuixach" id="tuixach">
+                            </div>
+                            <div class="filter-row">
+                                <label for="">Túi xách</label>
+                                <input type="checkbox" name="tuixach" id="tuixach">
+                            </div>
+                            <div class="filter-row">
+                                <label for="">Túi xách</label>
+                                <input type="checkbox" name="tuixach" id="tuixach">
+                            </div>
+                            <div class="filter-row">
+                                <label for="">Túi xách</label>
+                                <input type="checkbox" name="tuixach" id="tuixach">
+                            </div>
+                        </div>
+                        <button class="modal-button filter" type="submit">FILTER</button>
+                        <button class="modal-button cancel" onclick="closeModal('filter')">CANCEL</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

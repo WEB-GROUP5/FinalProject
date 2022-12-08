@@ -89,6 +89,7 @@ button.program-box.shadow {
 .slider3 .img {
   /* height: 120px; */
   /* background-color: red; */
+  /* aspect-ratio: 2/3; */
   border-radius: 5px !important;
 }
 .description {
@@ -104,12 +105,36 @@ button.program-box.shadow {
 .slider2 {
   margin-bottom: 30px !important;
 }
+.slider2_item img {
+  aspect-ratio: 2/2;
+}
 .slider2_item:hover .title,
 .slider2_item:hover .title {
   text-decoration: underline;
 }
-.slider3_item .title{
-  font-size: .8rem;
+.slider3_item .title {
+  font-size: 0.8rem;
+  text-transform: capitalize !important;
+}
+.slider2_item .description, .slider4_item .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.slider2_item .title, .slider4_item .title {
+  min-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.slider4_item .title{
+  margin-top: 5px;
 }
 .slider:hover .slider_item {
   transform: scale(1.005);

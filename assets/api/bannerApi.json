@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Giỏ làm từ lá dứa - Họa tiết hình thoi'",
+        "imgUrl": "banner1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ví cầm tay giả da'",
+        "imgUrl": "banner2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Ví cầm tay giả da",
+        "imgUrl": "banner3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Giỏ làm từ lá dứa - Cơ bản'",
+        "imgUrl": "banner4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Giỏ làm từ cỏ bàng - Họa tiết hoa sen",
+        "imgUrl": "banner5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Túi làm từ vỏ trái cây",
+        "imgUrl": "banner6.jpg"
+    }
+]

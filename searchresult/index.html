@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../assets/css/search.css">
 
     <link rel="stylesheet" href="../assets/vendors/css/tiny-slider.css">
+    <link rel="stylesheet" href="../assets/css/yeuthich.css">
 </head>
 
 <body>
@@ -38,31 +39,72 @@
                 <span>BACK</span>
             </button>
             <div class="searchBar">
-                <input type="search" class="search-input" placeholder="Search..." autofocus>
+                <input type="text" class="search-input" id="searchInput" onkeydown="handleFilter()" onchange="handleFilter()" onclick="handleFilter()"
+                    placeholder="Search..." autofocus>
                 <span class="search-icon"></span>
             </div>
         </div>
         <h3 class="search-title">Đề xuất cho bạn: </h3>
         <div class="rec">
-            <span class="rec-item">
-                Từ khóa
+            <span class="rec-item" onclick="getRec(this)">
+                Túi
             </span>
-            <span class="rec-item">
-                Từ khóa
+            <span class="rec-item" onclick="getRec(this)">
+                Khuyến mãi 20%
             </span>
-            <span class="rec-item">
-                Từ khóa
+            <span class="rec-item" onclick="getRec(this)">
+                Trái cây và rau quả rất tốt
             </span>
-            <span class="rec-item">
-                Từ khóa
+            <span class="rec-item" onclick="getRec(this)">
+                Sale of 20%
+            </span>
+            <span class="rec-item" onclick="getRec(this)">
+                Túi da táo
             </span>
         </div>
         <h3 class="search-title">Kết quả tìm kiếm: </h3>
+        <div class="yeuthichSec">
+            <div class="yeuthichContainer" id="productContainer">
+                <div class="item">
+                    <div class="img"><img src="../assets/images/products/Túi bẹ chuối.png" alt=""></div>
+                    <div class="content">
+                        <div class="title">
+                            Túi mới a hihihi
+                        </div>
+                        <span>Túi xách</span>
+                        <div class="desc">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vero quaerat dolores eaque
+                            delectus veritatis veniam recusandae. Eligendi porro iure doloremque doloribus, voluptatibus
+                            aliquam assumenda, rerum molestias itaque modi corrupti.
+                        </div>
+                        <div class="price">
+                            <div class="old-price">121100VNĐ</div>
+                            <div class="new-price">121100VNĐ</div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="datngay">Đặt ngay</button>
+                        <button class="xoa">Xóa</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="noResult" style="text-align: center; margin: 20px 0; display: block;">
+                <div class="img"><img src="../assets/images/icons/bigsearch.png" alt=""></div>
+                <div style="text-align: center;">
+                    <b>We couldn’t find any results</b>
+                    <br>
+                    Please try another key word or perform a new search.
+
+                </div>
+            </div>
+        </div>
+
         <script>
             w3.includeHTML();
         </script>
-        <script src="../assets/js/modals.js"></script>
-        <script src="../assets/js/handleScroll.js"></script>
-</body>
+        <script src="../assets/js/searchresult.js"></script>
 
 </html>

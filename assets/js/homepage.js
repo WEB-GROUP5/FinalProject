@@ -204,8 +204,8 @@ function renderYeuThichProducts(data) {
                                     <div class="title">${p.title}</div>
                                     <span class="description">${p.desc}</span>
                                     <div class="price">
-                                        <span class="old-price">500.000 VNĐ</span>
-                                        <span class="new-price">400.000 VNĐ</span>
+                                        <span class="old-price">${p.removedPrice} VNĐ</span>
+                                        <span class="new-price">${p.price} VNĐ</span>
                                     </div>
                                     </div>
                                     <div onclick="handleThemVaoYeuThich('${p.id}')">${heartSvg}</div>
@@ -226,7 +226,7 @@ function renderTuiXachProducts(data) {
                 <div class="title" onclick="goUrl('/productdetail/?id=${p.id}')">${p.title}</div>
                 <div onclick="handleThemVaoYeuThich('${p.id}')">${heartSvg}</div>
                 <div class="price">
-                                        <span class="new-price">400.000 VNĐ</span>
+                                        <span class="new-price">${p.price} VNĐ</span>
                                     </div>
             </div>`
         }

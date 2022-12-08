@@ -2,6 +2,10 @@ function openModal(id){
     document.getElementById(id).style.display='block';
     disableScroll()
 }
+function closeModal(id){
+    document.getElementById(id).style.display='none';
+    enableScroll()
+}
 
 
 

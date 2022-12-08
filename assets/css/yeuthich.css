@@ -1,0 +1,13 @@
+.yeuthichSec .title{
+    font-weight: 600;
+}
+.breadcrumb{
+    line-height: 20px;
+    font-size: 1.1rem;
+    margin: 5px 0 15px 0;
+}
+.breadcrumb .back{
+    text-decoration: none;
+    color: rgb(0, 0, 143);
+    margin: 0 5px;
+}

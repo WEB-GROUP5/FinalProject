@@ -7,37 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
     <!-- Favicon :  title off website -->
-    <link rel="shortcut icon" href="./assets/images/logo/mainlogo.png">
+    <link rel="shortcut icon" href="../assets/images/logo/mainlogo.png">
     <!-- Thư viện w3.js -->
-    <script src="./assets/vendors/js/w3.js"></script>
+    <script src="../assets/vendors/js/w3.js"></script>
 
-    <link rel="stylesheet" href="./assets/vendors/css/w3.css">
-    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="../assets/vendors/css/w3.css">
+    <link rel="stylesheet" href="../assets/css/modal.css">
     <!-- normalize styles -->
-    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
     <!-- fonts + components -->
-    <link rel="stylesheet" href="./assets/css/componentstyle.css">
+    <link rel="stylesheet" href="../assets/css/componentstyle.css">
     <!-- Homepage style -->
-    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <link rel="stylesheet" href="../assets/css/homepage.css">
+    <link rel="stylesheet" href="../assets/css/yeuthich.css">
 
-    <link rel="stylesheet" href="./assets/vendors/css/tiny-slider.css">
+    <link rel="stylesheet" href="../assets/vendors/css/tiny-slider.css">
 </head>
 
 <body>
     <!-- Import header W3 -->
-    <div w3-include-html="./assets/header/"></div>
+    <div w3-include-html="../assets/header/"></div>
 
     <div class="container">
 
         <div class="sesFilter">
-            <div class="searchBar" onclick="window.location.replace('searchresult')">
+            <div class="searchBar" onclick="window.location.replace('../searchresult')">
                 <input type="text" class="search-input" placeholder="Search...">
                 <span class="search-icon"></span>
             </div>
             <div class="filter-box">
                 <button class="btnFilter" onclick="openModal('filter')"></button>
             </div>
-            <div id="filter" style="display: none;" class="w3-modal w3-animate-opacity">
+            <div id="filter" class="w3-modal w3-animate-opacity">
                 <div class="w3-modal-content w3-card-4 modal">
 
                     <div class="w3-container modal-container">
@@ -74,87 +75,32 @@
             </div>
         </div>
 
-        <div class="sestypes">
-            <button class="program-box shadow">
-                <div class="box">
-                    <div class="circal-icon"><img alt="Durian" class="program-box__box-image"
-                            src="./assets/images/icons/arrow.png">
-                    </div>
-                    <p class="chakra-text">Durian</p>
-                </div>
-            </button>
-            <button class="program-box shadow">
-                <div class="box">
-                    <div class="circal-icon"><img alt="Durian" class="program-box__box-image"
-                            src="./assets/images/icons/computer.png">
-                    </div>
-                    <p class="chakra-text">Durian</p>
-                </div>
-            </button>
-            <button class="program-box shadow">
-                <div class="box">
-                    <div class="circal-icon"><img alt="Durian" class="program-box__box-image"
-                            src="./assets/images/icons/down.png">
-                    </div>
-                    <p class="chakra-text">Durian</p>
-                </div>
-            </button>
-            <button class="program-box shadow">
-                <div class="box">
-                    <div class="circal-icon"><img alt="Durian" class="program-box__box-image"
-                            src="./assets/images/icons/fan.png">
-                    </div>
-                    <p class="chakra-text">Durian</p>
-                </div>
-            </button>
-            <button class="program-box shadow">
-                <div class="box">
-                    <div class="circal-icon"><img alt="Durian" class="program-box__box-image"
-                            src="./assets/images/icons/next.png">
-                    </div>
-                    <p class="chakra-text">Durian</p>
-                </div>
-            </button>
-            <button class="program-box shadow">
-                <div class="box">
-                    <div class="circal-icon"><img alt="Durian" class="program-box__box-image"
-                            src="./assets/images/icons/talk.png">
-                    </div>
-                    <p class="chakra-text">Durian</p>
-                </div>
-            </button>
-            <button class="program-box shadow">
-                <div class="box">
-                    <div class="circal-icon"><img alt="Durian" class="program-box__box-image"
-                            src="./assets/images/icons/talk.png">
-                    </div>
-                    <p class="chakra-text">Durian</p>
-                </div>
-            </button>
-            <button class="program-box shadow">
-                <div class="box">
-                    <div class="circal-icon"><img alt="Durian" class="program-box__box-image"
-                            src="./assets/images/icons/talk.png">
-                    </div>
-                    <p class="chakra-text">Durian</p>
-                </div>
-            </button>
+       <div class="yeuthichSec">
+            <div class="breadcrumb">
+                <a href="../" class="back">< Trở về</a>
+                <span>Trang chủ > Yêu thích</span>
+            </div>
+            <h3 class="title">Yêu thích</h3>
 
-        </div>
+            <div class="yeuthichContainer">
+                <div class="item">
 
+                </div>
+            </div>
+       </div>
 
         <div class="slider1" id="bannerSec">
-            <!-- <div><img src="./assets/images/banners/banner1.webp" width="100%" alt=""></div> -->
+            <!-- <div><img src="../assets/images/banners/banner1.webp" width="100%" alt=""></div> -->
         </div>
 
 
         <div class="sesTitle">
             <h3 class="title">Sản phẩm yêu thích</h3>
-            <a href="./yeuthich" class="showAll">Tất cả</a>
+            <a href="./productlist" class="showAll">Tất cả</a>
         </div>
         <div class="slider slider2" id="yeuthichSection">
             <!-- <div class="slider_item slider2_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div> -->
@@ -168,7 +114,7 @@
         </div>
         <div class="slider slider3" id="tuixachSection">
             <!-- <div class="slider_item slider3_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
             </div> -->
         </div>
@@ -179,55 +125,55 @@
         </div>
         <div class="slider slider4" id="dexuatSection">
             <div class="slider_item slider4_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div>
 
             <div class="slider_item slider4_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div>
 
             <div class="slider_item slider4_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div>
 
             <div class="slider_item slider4_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div>
 
             <div class="slider_item slider4_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div>
 
             <div class="slider_item slider4_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div>
 
             <div class="slider_item slider4_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div>
 
             <div class="slider_item slider4_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div>
 
             <div class="slider_item slider4_item">
-                <div class="img"><img src="./assets/images/products/image.webp" width="100%" alt=""></div>
+                <div class="img"><img src="../assets/images/products/image.webp" width="100%" alt=""></div>
                 <div class="title">Aussie Roll - Republic Plaza</div>
                 <span class="description">American - Fusion</span>
             </div>
@@ -235,9 +181,9 @@
 
 
         </div>
-        <script src="./assets/js/homepage.js"></script>
-        <script src="./assets/vendors/js/tiny-slider.js"></script>
-        <script src="./assets/js/handleYeuThich.js"></script>
+        <script src="../assets/js/favpage.js"></script>
+        <script src="../assets/vendors/js/tiny-slider.js"></script>
+        <script src="../assets/js/handleYeuThich.js"></script>
         <script>
 
 
@@ -262,8 +208,7 @@
     <script>
         w3.includeHTML();
     </script>
-    <script src="../assets/js/modals.js"></script>
-    <!-- <script src="../assets/js/"></script> -->
+    <script src=".../assets/js/modals.js"></script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@ async function getData(url) {
 }
 
 // render Banners
-const bannerUrl = './assets/api/bannerApi.json'
+const bannerUrl = '../assets/api/bannerApi.json'
 getData(bannerUrl)
     .then(banners => {
         renderBanners(banners)
@@ -40,7 +40,7 @@ function renderBanners(data) {
     if (data) {
         bannerContent = ''
         for (b of data) {
-            bannerContent += `<div><img src="./assets/images/banners/${b.imgUrl}" width="100%" alt="${b.name}"></div>`
+            bannerContent += `<div><img src="../assets/images/banners/${b.imgUrl}" width="100%" alt="${b.name}"></div>`
         }
         document.getElementById('bannerSec').innerHTML = bannerContent;
     }
@@ -55,7 +55,7 @@ const heartSvg = `
 `
 getHomePage()
 function getHomePage(){
-    const productUrl = './assets/api/allProducts.json'
+    const productUrl = '../assets/api/allProducts.json'
     getData(productUrl)
         .then(products => {
             // render Yeuthich
@@ -200,7 +200,7 @@ function renderYeuThichProducts(data) {
         for (p of data) {
             yeuthichContent += `<div class="slider_item slider2_item">
                                     <div onclick="goUrl('/productdetail/?id=${p.id}')">
-                                    <div class="img"><img src="./assets/images/products/${p.imageUrl}" width="100%" alt="${p.title}"></div>
+                                    <div class="img"><img src="../assets/images/products/${p.imageUrl}" width="100%" alt="${p.title}"></div>
                                     <div class="title">${p.title}</div>
                                     <span class="description">${p.desc}</span>
                                     <div class="price">
@@ -222,7 +222,7 @@ function renderTuiXachProducts(data) {
         tuixachContent = ''
         for (p of data) {
             tuixachContent += `<div class="slider_item slider3_item" >
-                <div class="img" onclick="goUrl('/productdetail/?id=${p.id}')"><img src="./assets/images/products/${p.imageUrl}" width="100%" alt="${p.title}"></div>
+                <div class="img" onclick="goUrl('/productdetail/?id=${p.id}')"><img src="../assets/images/products/${p.imageUrl}" width="100%" alt="${p.title}"></div>
                 <div class="title" onclick="goUrl('/productdetail/?id=${p.id}')">${p.title}</div>
                 <div onclick="handleThemVaoYeuThich('${p.id}')">${heartSvg}</div>
                 <div class="price">
@@ -241,7 +241,7 @@ function renderDeXuatProducts(data) {
         for (p of data) {
             dexuatContent += `<div class="slider_item slider4_item">
            <div  onclick="goUrl('/productdetail/?id=${p.id}')">
-           <div class="img" ><img src="./assets/images/products/${p.imageUrl}" width="100%" alt="${p.title}"></div>
+           <div class="img" ><img src="../assets/images/products/${p.imageUrl}" width="100%" alt="${p.title}"></div>
            <div class="title">${p.title}</div>
            <span class="description">${p.desc}</span>
            </div>

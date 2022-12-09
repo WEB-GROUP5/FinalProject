@@ -191,3 +191,28 @@ p {
 											  transparent 75%,
 											  transparent)
 }
+.addCart{
+    margin: 10px 0;
+}
+.addCart .increase{
+
+}
+.addCart .decrease{
+
+}
+.addCart button{
+  border: none !important;
+  border-radius: 50%;
+  background-color: #efb607;
+}
+.addCart button:hover{
+  cursor: pointer;
+  background-color: #dda602;
+}
+.addCart input{
+  outline: none;
+  width: 30px;
+  height: 20px;;
+  text-align: right;
+  padding: 2px 5px;
+}

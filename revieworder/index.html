@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Review Order</title>
+        <!-- Favicon :  title off website -->
+        <link rel="shortcut icon" href="../assets/images/logo/mainlogo.png">
     <link rel="stylesheet" href="../assets/css/yeuthich.css">
     <link rel="stylesheet" href="../assets/css/revieworder.css">
 
@@ -33,11 +35,10 @@
     </div>
     <!--  -->
     <div class="row">
-        <div class="item-left">
-            <div class="product1">
+        <div class="item-left" id="cartContent">
+            <!-- <div class="product-item">
                 <div class="img">
                     <img src="../assets/images/products/Túi làm từ táo thừa.png" alt="" width="150px">
-
                 </div>
                 <div class="mota">
                     <h4>&emsp;&emsp;Túi làm từ táo thừa</h4>
@@ -49,42 +50,14 @@
                         &emsp;&emsp; <span style="color:red"><b> 400.000 VNĐ</b></span>
                     </p>
                 </div>
-                <hr color="gray" width="90%">
-            </div>
-            <!-- don 2 -->
-            <div class="product2">
-                <div class="img">
-                    <img src="../assets/images/products/Túi làm từ vỏ trái cây tổng hợp.png" alt="">
-                </div>
-                <div class="mota">
-                    <h4>&emsp;&emsp;Túi làm từ trái cây</h4>
-                    <p>
-                        &emsp;&emsp;Chất liệu: Trái cây tổng hợp <br>
-                        &emsp;&emsp;Kích thước: 50x40cm <br>
-                        &emsp;&emsp;Màu sắc: Đỏ, Cam, Vàng, Lam , Lục,... <br>
-                        &emsp;&emsp;Xuất xứ: Việt Nam <br>
-                        &emsp;&emsp;<span style="color:red"><b>40.000 VNĐ</b></span>
-                    </p>
-                </div>
-
-                <hr color="gray" width="90%">
-            </div>
-            <!-- don3 -->
-            <div class="product3">
-                <div class="img">
-                    <img src="../assets/images/products/Túi cầm tay giả da.png" alt="">
-                </div>
-                <div class="mota">
-                    <h4>&emsp;&emsp;Ví cầm tay giả da</h4>
-                    <p>
-                        &emsp;&emsp;Chất liệu: Lá dứa giả da<br>
-                        &emsp;&emsp;Kích thước: 27x16cm<br>
-                        &emsp;&emsp;Màu sắc: Đỏ, Đen <br>
-                        &emsp;&emsp;Xuất xứ: Việt Nam <br>
-                        &emsp;&emsp; <span style="color:red"><b> 250.000 VNĐ</b></span>
-                    </p>
+                <div class="addCart">
+                    <button onclick="decreaseValueButtonClick();changeCartClick('dec')" id="decrease" class="decrease">-</button>
+                    <input id="inputCartValue" type="number" step="1" min="0" max="10" readonly>
+                    <button id="increase" class="increase" onclick="increaseValueButtonClick();changeCartClick('inc')">+</button>
                 </div>
             </div>
+            <hr color="gray" width="90%"> -->
+           
 
 
         </div>
@@ -188,6 +161,10 @@
     <script>
         w3.includeHTML();
     </script>
+    <script src="../assets/js/homepage.js"></script>
+    <script src="../assets/js/revieworder.js"></script>
+    <script src="../assets/js/handleCart.js"></script>
+    <script src="../assets/js/revieworder.js"></script>
 </body>
 
 </html>

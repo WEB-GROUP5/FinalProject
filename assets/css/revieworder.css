@@ -196,3 +196,13 @@ body{
     }
 }
 
+.product-item{
+    display: flex;
+}
+.addCart{
+    padding: 50px 10px;
+}
+.addCart input{
+    width: 50px !important;
+    align-items: center;
+}

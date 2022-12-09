@@ -16,46 +16,14 @@
 
 <body>
     <div class="sesFilter">
-        <div class="searchBar" onclick="window.location.replace('searchresult')">
+        <div class="searchBar" onclick="window.location.replace('../searchresult')">
             <input type="text" class="search-input" placeholder="Search...">
             <span class="search-icon"></span>
         </div>
         <div class="filter-box">
-            <button class="btnFilter" onclick="openModal('filter')"></button>
         </div>
         <div id="filter" style="display: none;" class="w3-modal w3-animate-opacity">
             <div class="w3-modal-content w3-card-4 modal">
-
-                <div class="w3-container modal-container">
-                    <form action="">
-                        <h3 class="filter-title">Mặt hàng</h3>
-                        <div class="filter-content" action="#">
-                            <div class="filter-row">
-                                <label for="">Túi xách</label>
-                                <input type="checkbox" name="tuixach" id="tuixach">
-                            </div>
-                            <div class="filter-row">
-                                <label for="">Túi xách</label>
-                                <input type="checkbox" name="tuixach" id="tuixach">
-                            </div>
-                            <div class="filter-row">
-                                <label for="">Túi xách</label>
-                                <input type="checkbox" name="tuixach" id="tuixach">
-                            </div>
-                            <div class="filter-row">
-                                <label for="">Túi xách</label>
-                                <input type="checkbox" name="tuixach" id="tuixach">
-                            </div>
-                            <div class="filter-row">
-                                <label for="">Túi xách</label>
-                                <input type="checkbox" name="tuixach" id="tuixach">
-                            </div>
-                        </div>
-                        <button class="modal-button filter" type="submit">FILTER</button>
-                        <button class="modal-button cancel" onclick="closeModal('filter')">CANCEL</button>
-                    </form>
-                </div>
-
             </div>
         </div>
     </div>

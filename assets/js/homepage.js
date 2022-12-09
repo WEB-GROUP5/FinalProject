@@ -54,7 +54,7 @@ const heartSvg = `
 </svg>
 `
 getHomePage()
-function getHomePage(){
+function getHomePage() {
     const productUrl = './assets/api/allProducts.json'
     getData(productUrl)
         .then(products => {
@@ -100,7 +100,7 @@ function getHomePage(){
                     }
                 }
             });
-    
+
             // render Túi xách
             renderTuiXachProducts(products)
             var slider3 = tns({
@@ -143,7 +143,7 @@ function getHomePage(){
                     }
                 }
             });
-    
+
             // render Đề xuất
             renderDeXuatProducts(products)
             var slider4 = tns({
@@ -190,13 +190,47 @@ function getHomePage(){
         .catch(error => {
             console.log('request failed: ', error)
         });
-    
+
 }
 
 
 function renderYeuThichProducts(data) {
     if (data) {
         yeuthichContent = ''
+        if (yeuthichArr.length > 0) {
+            if (yeuthichArr.length == 1) {
+                p = data.find(v => v.id == yeuthichArr[0])
+                yeuthichContent += `<div class="slider_item slider2_item">
+                                    <div onclick="goUrl('/productdetail/?id=${p.id}')">
+                                    <div class="img"><img src="./assets/images/products/${p.imageUrl}" width="100%" alt="${p.title}"></div>
+                                    <div class="title">${p.title}</div>
+                                    <span class="description">${p.desc}</span>
+                                    <div class="price">
+                                        <span class="old-price">${p.removedPrice} VNĐ</span>
+                                        <span class="new-price">${p.price} VNĐ</span>
+                                    </div>
+                                    </div>
+                                    <div onclick="handleThemVaoYeuThich('${p.id}')">${heartSvg}</div>
+                                </div>`
+            }
+            else {
+                for (y of yeuthichArr) {
+                    p = data.find(v => v.id == y)
+                    yeuthichContent += `<div class="slider_item slider2_item">
+                                    <div onclick="goUrl('/productdetail/?id=${p.id}')">
+                                    <div class="img"><img src="./assets/images/products/${p.imageUrl}" width="100%" alt="${p.title}"></div>
+                                    <div class="title">${p.title}</div>
+                                    <span class="description">${p.desc}</span>
+                                    <div class="price">
+                                        <span class="old-price">${p.removedPrice} VNĐ</span>
+                                        <span class="new-price">${p.price} VNĐ</span>
+                                    </div>
+                                    </div>
+                                    <div onclick="handleThemVaoYeuThich('${p.id}')">${heartSvg}</div>
+                                </div>`
+                }
+            }
+        }
         for (p of data) {
             yeuthichContent += `<div class="slider_item slider2_item">
                                     <div onclick="goUrl('/productdetail/?id=${p.id}')">
@@ -256,3 +290,4 @@ function renderDeXuatProducts(data) {
 function goUrl(url) {
     window.location.href = url;
 }
+
